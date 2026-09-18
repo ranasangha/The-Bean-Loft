@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bean Loft - Menu</title>
+<style>
+  :root {
+    --cream: #F5EFE0;
+    --maroon: #7A1F2B;
+    --maroon-dark: #5A1620;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: var(--cream);
+    color: var(--maroon-dark);
+  }
+  header {
+    text-align: center;
+    padding: 40px 20px 20px;
+  }
+ header img {
+  width: 40vw;
+  max-width: 220px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: var(--maroon);
+    letter-spacing: 1px;
+  }
+  header p.tagline {
+    font-style: italic;
+    color: var(--maroon-dark);
+    margin-top: 4px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  .category {
+    margin-top: 40px;
+  }
+  .category h2 {
+    font-size: 1.5rem;
+    color: var(--maroon);
+    border-bottom: 2px solid var(--maroon);
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .subcategory h3 {
+    font-size: 1.1rem;
+    color: var(--maroon-dark);
+    margin: 16px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(122,31,43,0.3);
+    font-size: 1rem;
+  }
+  .item .name { flex: 1; }
+  .item .price { font-weight: bold; margin-left: 10px; white-space: nowrap; }
+  .note {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 8px;
+    color: var(--maroon-dark);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: var(--maroon-dark);
+    border-top: 1px solid rgba(122,31,43,0.3);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <!-- Replace this with your logo image link or file -->
+  <img src="logo.png" alt="The Bean Loft Logo">
+  <h1>The Bean Loft</h1>
+  <p class="tagline">Where you savour each sip</p>
+</header>
+
+<div class="container">
+
+  <!-- SIDES & BITES -->
+  <div class="category">
+    <h2>Sides & Bites</h2>
+    <div class="subcategory">
+      <h3>Non-Vegetarian</h3>
+      <div class="item"><span class="name">Chicken Popcorn</span><span class="price">₹150</span></div>
+      <div class="item"><span class="name">Chicken Nuggets</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Chicken Poppers</span><span class="price">₹200</span></div>
+      <div class="item"><span class="name">Fish Poppers</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Crab Claw Amritsari</span><span class="price">₹200</span></div>
+      <div class="item"><span class="name">Chicken Puff</span><span class="price">₹80</span></div>
+    </div>
+    <div class="subcategory">
+      <h3>Vegetarian</h3>
+      <div class="item"><span class="name">Avocado Guacamole</span><span class="price">₹200</span></div>
+      <div class="item"><span class="name">Nachos Bowl</span><span class="price">₹220</span></div>
+      <div class="item"><span class="name">Veg Puff</span><span class="price">₹60</span></div>
+      <div class="item"><span class="name">Cheese & Corn Poppers</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Cheese & Corn Pocket</span><span class="price">₹150</span></div>
+      <div class="item"><span class="name">Peri Peri Cheese Finger</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Peri Peri Fries</span><span class="price">₹160</span></div>
+      <div class="item"><span class="name">Truffle Fries</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Garlic Fries</span><span class="price">₹140</span></div>
+      <div class="item"><span class="name">Classic Fries</span><span class="price">₹120</span></div>
+    </div>
+  </div>
+
+  <!-- BAKERY -->
+  <div class="category">
+    <h2>Bakery</h2>
+    <div class="item"><span class="name">White Forest Pastry</span><span class="price">₹220</span></div>
+    <div class="item"><span class="name">Chocolate Pastry</span><span class="price">₹130</span></div>
+    <div class="item"><span class="name">Bombolini</span><span class="price">₹220</span></div>
+    <div class="item"><span class="name">Biscoff Cheesecake</span><span class="price">₹230</span></div>
+    <div class="item"><span class="name">Berry Cheesecake</span><span class="price">₹230</span></div>
+  </div>
+
+  <!-- INDIAN SPECIALITY -->
+  <div class="category">
+    <h2>Indian Speciality</h2>
+    <div class="subcategory">
+      <h3>Hot / Large</h3>
+      <div class="item"><span class="name">Filter Coffee</span><span class="price">₹130 / ₹150</span></div>
+      <div class="item"><span class="name">Kahwa</span><span class="price">₹150 / ₹170</span></div>
+      <div class="item"><span class="name">Assam Tea</span><span class="price">₹130 / ₹150</span></div>
+      <div class="item"><span class="name">Goan Rose Tea</span><span class="price">₹150 / ₹170</span></div>
+    </div>
+  </div>
+
+  <!-- SMOOTHIES -->
+  <div class="category">
+    <h2>Smoothies</h2>
+    <div class="item"><span class="name">Berry Blast</span><span class="price">₹180 / ₹220</span></div>
+    <div class="item"><span class="name">Mango Passion Banana</span><span class="price">₹180 / ₹220</span></div>
+    <div class="item"><span class="name">Peanut Butter Banana</span><span class="price">₹180 / ₹220</span></div>
+    <div class="item"><span class="name">Tropical Cream</span><span class="price">₹200 / ₹220</span></div>
+    <div class="item"><span class="name">Chocolate Protein</span><span class="price">₹200 / ₹220</span></div>
+    <p class="note">Sizes: Small / Large</p>
+  </div>
+
+  <!-- CLASSIC BEVERAGES -->
+  <div class="category">
+    <h2>Classic Beverages</h2>
+    <div class="subcategory">
+      <h3>Hot</h3>
+      <div class="item"><span class="name">Espresso</span><span class="price">₹100</span></div>
+      <div class="item"><span class="name">Cortado</span><span class="price">₹120</span></div>
+      <div class="item"><span class="name">Piccolo</span><span class="price">₹120</span></div>
+      <div class="item"><span class="name">Macchiato</span><span class="price">₹120</span></div>
+      <div class="item"><span class="name">Flat White</span><span class="price">₹130</span></div>
+      <div class="item"><span class="name">Dip Tea</span><span class="price">₹100</span></div>
+      <div class="item"><span class="name">Americano</span><span class="price">₹120</span></div>
+      <div class="item"><span class="name">Cappuccino</span><span class="price">₹130</span></div>
+      <div class="item"><span class="name">Latte</span><span class="price">₹130</span></div>
+      <div class="item"><span class="name">Mocha</span><span class="price">₹150</span></div>
+      <div class="item"><span class="name">Hot Chocolate</span><span class="price">₹150</span></div>
+    </div>
+    <div class="subcategory">
+      <h3>Cold (Small / Medium / Large)</h3>
+      <div class="item"><span class="name">Iced Latte</span><span class="price">₹140 / ₹160 / ₹180</span></div>
+      <div class="item"><span class="name">Iced Cappuccino</span><span class="price">₹140 / ₹160 / ₹180</span></div>
+      <div class="item"><span class="name">Iced Mocha</span><span class="price">₹150 / ₹170 / ₹190</span></div>
+      <div class="item"><span class="name">Iced Tea</span><span class="price">₹130 / ₹150 / ₹170</span></div>
+      <div class="item"><span class="name">Iced Americano</span><span class="price">₹130 / ₹150 / ₹170</span></div>
+      <div class="item"><span class="name">Espresso Tonic</span><span class="price">₹150 / ₹170 / ₹190</span></div>
+      <div class="item"><span class="name">Lemon Soda</span><span class="price">₹100 / ₹120 / ₹140</span></div>
+      <div class="item"><span class="name">Lemonade</span><span class="price">₹100 / ₹120 / ₹140</span></div>
+    </div>
+  </div>
+
+  <!-- SIGNATURE COFFEES -->
+  <div class="category">
+    <h2>Signature Coffees</h2>
+    <div class="subcategory">
+      <h3>Hot</h3>
+      <div class="item"><span class="name">Honey Cinnamon Latte</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Salted Maple Latte</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Spanish Latte</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Hazelnut Cream Latte</span><span class="price">₹180</span></div>
+      <div class="item"><span class="name">Dew Over</span><span class="price">₹150</span></div>
+      <div class="item"><span class="name">French Press</span><span class="price">₹150</span></div>
+    </div>
+    <div class="subcategory">
+      <h3>Cold (Small / Medium / Large)</h3>
+      <div class="item"><span class="name">Honey Cinnamon Latte</span><span class="price">₹190 / ₹200 / ₹200</span></div>
+      <div class="item"><span class="name">Salted Maple Latte</span><span class="price">₹190 / ₹200 / ₹200</span></div>
+      <div class="item"><span class="name">Spanish Latte</span><span class="price">₹190 / ₹200 / ₹200</span></div>
+      <div class="item"><span class="name">Hazelnut Cream Latte</span><span class="price">₹190 / ₹200 / ₹200</span></div>
+      <div class="item"><span class="name">Affogato</span><span class="price">₹200 / ₹200 / ₹200</span></div>
+    </div>
+    <p class="note">Milk Options: Oat & Soy Milk +₹30 additional. Additional flavours/whipped cream +₹20 each.</p>
+  </div>
+
+  <!-- MOJITOS -->
+  <div class="category">
+    <h2>Mojito (Small / Medium / Large)</h2>
+    <div class="item"><span class="name">Mint Mojito</span><span class="price">₹150 / ₹170 / ₹190</span></div>
+    <div class="item"><span class="name">Strawberry Mojito</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+    <div class="item"><span class="name">Kiwifruit Mojito</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+    <div class="item"><span class="name">Maple Mojito</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+  </div>
+
+  <!-- MOCKTAILS -->
+  <div class="category">
+    <h2>Mocktails (Small / Medium / Large)</h2>
+    <div class="item"><span class="name">Lemongrass & Ginger Cooler</span><span class="price">₹150 / ₹170 / ₹200</span></div>
+    <div class="item"><span class="name">Shirley Temple</span><span class="price">₹150 / ₹170 / ₹200</span></div>
+    <div class="item"><span class="name">Virgin Colada</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+    <div class="item"><span class="name">Chilly Guava</span><span class="price">₹150 / ₹170 / ₹200</span></div>
+    <div class="item"><span class="name">Strawberry Basil Fizz</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+    <div class="item"><span class="name">Tropical Mango</span><span class="price">₹160 / ₹180 / ₹200</span></div>
+  </div>
+
+  <p class="note" style="text-align:center; margin-top: 30px;">All rates inclusive of 5% GST. Prices subject to change without prior notice.</p>
+
+</div>
+
+<footer>
+  &copy; The Bean Loft — All rights reserved.
+</footer>
+
+</body>
+</html>
